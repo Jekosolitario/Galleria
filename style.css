@@ -1,0 +1,125 @@
+:root {
+    /* dimensioni del font base 10px per facilitare l'use rem/em */
+    font-size: 62.5%;
+
+    /* variabili colori personalizzate */
+    --bg-color: rgb(0 0 0);
+    --color: rgb(0 0 0);
+
+    --link: rgb(0 0 0);
+    --hover: rgb(0 0 0);
+
+    --title: rgb(0 0 0);
+}
+
+/* azzero margini e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* PARTO CON LA CREAZIONE DEL LAYOUT PER DISPOSITIVI MOBILI */
+
+
+/* rendo il body un grid container responsive  */
+body {
+    width: 100%;
+    min-height: 100vh;
+    /* occupa tutta la pagina visualizzata */
+    font-size: 1.7rem;
+    padding: 0.5em;
+
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+/* header contenente il titolo e i filtri della galleria, lo rendo un flex container */
+header#titolo {
+    width: 100%;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 100%;
+}
+
+/* titolo */
+header#titolo>div#boxTitle>h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+
+    padding: 0.5em;
+}
+
+/* filtri per le categorie */
+header#titolo>nav>ul.filtri {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+/* do uno stile ai pulsanti */
+header#titolo>nav>ul.filtri>li>button {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+
+    border-radius: 12px trasparent;
+    padding: 0.2em;
+}
+
+
+
+
+
+/* main contenente la galleria con le foto, lo rendo un flex container */
+main#corpoGallery {
+    width: 100%;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 100%;
+}
+
+/* sottotitolo */
+main#corpoGallery>h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+
+    padding: 0 0.5em 0.5em;
+}
+
+/* sezione della galleria con foto la rendo un flex container*/
+main#corpoGallery>section#grigliaFotoFlex {
+    width: 100%;
+    padding: 0.5em;
+
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+}
+/* griglia card foto */
+main#corpoGallery>section#grigliaFotoFlex>div#insieme {
+    width: 100%;
+    max-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow: auto;
+}
+
+/* do uno stile comune a tutte le card */
+div#insieme>div.card {
+    width: 100%;
+    padding: 0.5em;
+}

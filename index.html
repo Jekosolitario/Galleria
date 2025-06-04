@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Zuhir Ichcho">
+    <meta name="description"
+        content="Scopri una galleria fotografica dinamica con filtri per categoria, layout responsive e effetto lightbox. Progetto realizzato in HTML, CSS e JavaScript.">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords"
+        content="galleria fotografica, filtri immagini, lightbox, HTML, CSS, JavaScript, progetto front-end, responsive, layout grid, galleria dinamica">
+
+    <!-- foglio di stile -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- per il titolo h1 -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <!-- per il testo -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+
+    <title>Galleria Fotografica Dinamica con Filtri | Progetto Front-End</title>
+</head>
+
+<body>
+
+    <header id="titolo">
+        <div id="boxTitle">
+            <h1>GALLERIA FOTOGRAFICA DINAMICA CON FILTRI</h1>
+        </div>
+
+        <nav aria-label="Filtri Galleria">
+            <ul class="filtri">
+                <li><button data-categoria="tutti">Tutti</button></li>
+                <li><button data-categoria="natura">Natura</button></li>
+                <li><button data-categoria="urbano">Urbano</button></li>
+                <li><button data-categoria="persone">Persone</button></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main id="corpoGallery" role="main">
+        <h2>Esplora le foto</h2>
+        <section id="grigliaFotoFlex">
+            <!-- sezione contenente tutte le foto, con i filtri sarà possibile selezionare le categorie ricercate -->
+            <div id="insieme">
+                <div class="card natura" data-categoria="natura">
+                    <img src="" alt="" width="80%">
+                </div>
+                <div class="card urbano" data-categoria="urbano">
+                    <img src="Foto/Murales_cane.webp" alt="" width="80%">
+                </div>
+                <div class="card natura" data-categoria="natura">
+                    <img src="" alt="" width="80%">
+                </div>
+                <div class="card urbano" data-categoria="urbano">
+                    <img src="Foto/CorridoioBN.webp" alt="" width="80%">
+                </div>
+                <div class="card natura" data-categoria="natura">
+                    <img src="" alt="" width="80%">
+                </div>
+                <div class="card urbano" data-categoria="urbano">
+                    <img src="Foto/InternoDecandente.webp" alt="" width="80%">
+                </div>
+                <div class="card natura" data-categoria="natura">
+                    <img src="" alt="" width="80%">
+                </div>
+                <div class="card urbano" data-categoria="urbano">
+                    <img src="Foto/MuralesScale.webp" alt="" width="80%">
+                </div>
+                <div class="card natura" data-categoria="natura">
+                    <img src="" alt="" width="80%">
+                </div>
+                <div class="card urbano" data-categoria="urbano">
+                    <img src="Foto/CamioncinoVintage.webp" alt="" width="80%">
+                </div>
+                <div class="card persone" data-categoria="persone">
+                    <img src="" alt="" width="80%">
+                </div>
+                <div class="card natura" data-categoria="natura">
+                    <img src="" alt="" width="80%">
+                </div>
+                <div class="card persone" data-categoria="persone">
+                    <img src="" alt="" width="80%">
+                </div>
+                <div class="card urbano" data-categoria="urbano">
+                    <img src="" alt="" width="80%">
+                </div>
+                <div class="card persone" data-categoria="persone">
+                    <img src="" alt="" width="80%">
+                </div>
+                <div class="card persone" data-categoria="persone">
+                    <img src="" alt="" width="80%">
+                </div>
+                <div class="card persone" data-categoria="persone">
+                    <img src="" alt="" width="80%">
+                </div>
+                <div class="card natura" data-categoria="natura">
+                    <img src="" alt="" width="80%">
+                </div>
+                <div class="card persone" data-categoria="persone">
+                    <img src="" alt="" width="80%">
+                </div>
+                <div class="card urbano" data-categoria="urbano">
+                    <img src="" alt="" width="80%">
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer id="piePag">
+        <p>Tutti i diritti riservati.</p>
+        <p><a href="">Privacy & Policy.</a></p>
+    </footer>
+    <script src="doc.js"></script>
+</body>
+
+
+</html>
