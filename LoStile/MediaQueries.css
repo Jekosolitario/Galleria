@@ -1,0 +1,43 @@
+:root {
+    /* dimensioni del font base 10px per facilitare l'use rem/em */
+    font-size: 62.5%;
+
+    /* variabili colori personalizzate */
+    --bg-color: #0A0F2C;
+    --bg-card: #1A237E;
+
+    --color: #f0f4ffeb;
+
+    --link: rgb(0 0 0);
+    --hover: #64B5F6;
+
+
+    --title: #2979FF;
+
+    --tx-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    --ombreBordi: 2px 3px 3px rgba(33, 150, 243, 0.3);
+}
+
+
+
+
+/* @media (min-width: 768px) {
+    header#titolo > nav > ul.filtri > li > button {
+        padding: 0.6em 1.2em;
+        font-size: 1.6rem;
+        transition: all 0.3s ease;
+    }
+
+    header#titolo > nav > ul.filtri > li > button:hover {
+        background-color: var(--hover);
+        color: var(--bg-color);
+        transform: scale(1.05);
+    }
+
+  .card:hover {
+    transform: scale(1.02);
+    border: 2px solid var(--hover);
+    transition: all 0.3s ease;
+  }
+}
+ */
