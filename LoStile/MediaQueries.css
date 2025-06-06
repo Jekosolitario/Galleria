@@ -31,22 +31,20 @@
     cursor: pointer;
   }
 
+  /* hover sui pulsanti filtri  */
   header#titolo>nav>ul.filtri>li>button:hover {
     background-color: var(--hover);
     color: var(--bg-color);
     transform: scale(1.05);
   }
 
-  /* riduco l'opacità delle card per dargli un effetto quando ci passo sopra con il puntatore del moouse */
   div#insieme>div.card {
-    opacity: 0.6;
     width: 60%;
   }
-
+  /* hover sulle card */
   div#insieme>div.card:hover {
     transform: scale(1.02);
     transition: all 0.5s ease;
-    opacity: 1;
   }
 }
 
@@ -60,10 +58,28 @@
     flex-wrap: wrap;
   }
 
+  /*   dimensione di ogni card al 30% cosi da avere tre card per riga */
   div#insieme>div.card {
     width: 30%;
     align-items: center;
     justify-content: center;
     flex: 0 0 30%;
+
+    opacity: 0.6;
+  }
+  /* aumento l'opacità all'hover */
+  div#insieme>div.card:hover {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+/* PER VIEWPORT SUPERIORI A 1024PX */
+@media (min-width: 1024px) {
+  div#insieme>div.card {
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 20%;
   }
 }

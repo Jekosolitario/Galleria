@@ -1,39 +1,40 @@
-# 📷 Galleria Fotografica Dinamica con Filtri
+# 📸 Galleria Fotografica Dinamica con Filtri
 
-Una galleria fotografica web dal design moderno e responsivo, sviluppata con HTML, CSS e JavaScript.  
-Le immagini sono suddivise in categorie selezionabili tramite pulsanti dinamici (Natura, Urbano, Persone), con un layout ottimizzato per la visualizzazione su dispositivi mobili.
-
-## 🌐 Tecnologie utilizzate
-
-- HTML5 / CSS3
-- JavaScript vanilla (filtro dinamico)
-- Google Fonts (Orbitron + Bebas Neue)
-- Immagini in formato WebP per prestazioni migliori
-
-## ⚙️ Funzionalità
-
-- ✅ Filtro immagini per categoria (con `data-*`)
-- ✅ Layout responsive (mobile-first)
-- ✅ Scroll interno alla galleria per visualizzare le immagini senza estendere la pagina
-- ✅ Palette dark blue con variabili CSS
-- ⏳ Lightbox per ingrandimento immagini (in sviluppo)
-
-## 📱 Design
-
-- Tema dark moderno con colori coerenti e accessibili
-- Testi leggibili e titoli con effetto `text-shadow`
-- Card con effetto gradiente, bordo arrotondato e immagini ottimizzate
-- Stile essenziale per mobile, con effetti visivi riservati a schermi più ampi tramite media queries
-
-## 🛠️ Stato del progetto
-
-In fase di completamento:
-
-- Alcune immagini sono ancora da caricare
-- Alcuni attributi `alt` verranno migliorati
-- Il sistema di lightbox sarà integrato a breve
+Un progetto front-end che presenta una **galleria fotografica interattiva** con **filtri per categoria**, **layout responsive** e **visualizzazione lightbox** per ogni immagine. Il tutto realizzato in **HTML, CSS e JavaScript Vanilla**.
 
 ---
 
-> Creato da **Zuhir Ichcho** come progetto personale di esercitazione front-end.  
-> Sentiti libero di esplorare, commentare o suggerire miglioramenti!
+## 🚀 Funzionalità
+
+- ✅ **Filtri dinamici** per categoria (`tutti`, `natura`, `urbano`, `persone`)
+- ✅ **Layout responsive** con Flexbox e Media Queries
+- ✅ **Effetto lightbox**: cliccando su una miniatura si apre l'immagine in sovrimpressione
+- ✅ **Chiusura lightbox** cliccando sulla ❌ o fuori dall’immagine
+- ✅ Design moderno con font personalizzati e colori a tema scuro
+- ✅ Immagini ottimizzate (`.webp`) per prestazioni migliori
+- ✅ Accessibilità migliorata (`alt`, `aria-label`, `role="main"`)
+
+---
+
+## 💻 Tecnologie utilizzate
+
+- **HTML5** per la struttura della galleria
+- **CSS3** con variabili, layout responsive, media queries e hover animati
+- **JavaScript Vanilla** per filtri e lightbox
+- **Google Fonts** (Bebas Neue & Orbitron)
+- **Immagini WebP** per migliorare il caricamento
+- **GitHub Pages** per la pubblicazione
+
+---
+
+## 🧠 Autore
+
+Progetto creato da **Zuhir Ichcho** come esercizio pratico durante il mio percorso da **Front-End Developer**.  
+Ogni feedback è ben accetto!
+
+---
+
+## 🌐 Link al progetto
+
+🔗 [Visualizza il sito live](https://tuo-username.github.io/nome-repository)
+> Sostituisci con l’URL GitHub Pages del tuo progetto

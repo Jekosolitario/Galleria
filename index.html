@@ -37,10 +37,10 @@
 
         <nav aria-label="Filtri Galleria">
             <ul class="filtri">
-                <li><button data-categoria="tutti">Tutti</button></li>
-                <li><button data-categoria="natura">Natura</button></li>
-                <li><button data-categoria="urbano">Urbano</button></li>
-                <li><button data-categoria="persone">Persone</button></li>
+                <li><button data-categoria="tutti" role="button">Tutti</button></li>
+                <li><button data-categoria="natura" role="button">Natura</button></li>
+                <li><button data-categoria="urbano" role="button">Urbano</button></li>
+                <li><button data-categoria="persone" role="button">Persone</button></li>
             </ul>
         </nav>
 
@@ -53,27 +53,27 @@
             <div id="insieme">
                 <div class="card natura" data-categoria="natura">
                     <img src="Foto/PareteMontana.webp" alt="Foto a una parete di arrampicata"
-                        title="Clicca per ingrandire">
+                        title="Clicca per ingrandire" class="img-thumb">
                 </div>
                 <div class="card urbano" data-categoria="urbano">
                     <img src="Foto/MuralesCane.webp" alt="Foto a un murales di un pallocino a forma di cane"
-                        title="Clicca per ingrandire">
+                        title="Clicca per ingrandire" class="img-thumb">
                 </div>
                 <div class="card natura" data-categoria="natura">
                     <img src="Foto/Ruscello.webp" alt="Foto di un ruscello sotto un arco di roccia"
-                        title="Clicca per ingrandire">
+                        title="Clicca per ingrandire" class="img-thumb">
                 </div>
                 <div class="card urbano" data-categoria="urbano">
                     <img src="Foto/CorridoioBN.webp" alt="Foto di un corridoio abbandonato in bianco e nero"
-                        title="Clicca per ingrandire">
+                        title="Clicca per ingrandire" class="img-thumb">
                 </div>
                 <div class="card natura" data-categoria="natura">
                     <img src="Foto/PietraBosco.webp" alt="Foto di una pietra bianca con del muschio in mezzo al bosco"
-                        title="Clicca per ingrandire">
+                        title="Clicca per ingrandire" class="img-thumb">
                 </div>
                 <div class="card urbano" data-categoria="urbano">
                     <img src="Foto/InternoDecandente.webp" alt="Foto di un edificio interno decadente"
-                        title="Clicca per ingrandire">
+                        title="Clicca per ingrandire" class="img-thumb">
                 </div>
                 <div class="card natura" data-categoria="natura">
                     <img src="Foto/TramontoCollina.webp" alt="Foto di una collina con dietro il tramonto"
@@ -104,38 +104,48 @@
                 <div class="card urbano" data-categoria="urbano">
                     <img src="Foto/UnaVecchiaBici.webp"
                         alt="Foto di una vecchia bici rotta e incastrata in un palo della luce"
-                        title="Clicca per ingrandire">
+                        title="Clicca per ingrandire" class="img-thumb">
                 </div>
                 <div class="card persone" data-categoria="persone">
                     <img src="Foto/SteFuma.webp" alt="Foto di profilo di un ragazzo pensieroso che fuma"
-                        title="Clicca per ingrandire">
+                        title="Clicca per ingrandire" class="img-thumb">
                 </div>
                 <div class="card persone" data-categoria="persone">
                     <img src="Foto/TramontoDaDietro.webp"
                         alt="Foto da dietro di due ragazzi e un cane con il tramonto davanti"
-                        title="Clicca per ingrandire">
+                        title="Clicca per ingrandire" class="img-thumb">
                 </div>
                 <div class="card persone" data-categoria="persone">
                     <img src="Foto/TreAmici.webp" alt="Foto di tre ragazzi abbracciati e sorridenti"
-                        title="Clicca per ingrandire">
+                        title="Clicca per ingrandire" class="img-thumb">
                 </div>
                 <div class="card natura" data-categoria="natura">
-                    <img src="Foto/FiumeLucente.webp" alt="Foto di un fiume che brilla" title="Clicca per ingrandire">
+                    <img src="Foto/FiumeLucente.webp" alt="Foto di un fiume che brilla" title="Clicca per ingrandire"
+                        class="img-thumb">
                 </div>
                 <div class="card urbano" data-categoria="urbano">
                     <img src="Foto/EdificioInNatura.webp"
                         alt="Foto di un edificio abbandonato da anni e ormai circondato dalla natura"
-                        title="Clicca per ingrandire">
+                        title="Clicca per ingrandire" class="img-thumb">
+                </div>
+
+                <!-- lightbox nascosto -->
+                <div id="lightbox" class="hidden">
+                    <span id="closeBtn">&times;</span>
+                    <img id="lightbox-img" src="" alt="immagine ingrandita">
                 </div>
             </div>
 
         </section>
+
+
     </main>
 
     <footer id="piePag">
         <p>Tutti i diritti riservati.</p>
         <p><a href="#"><small>Privacy & Cookie Policy</small></a></p>
     </footer>
+
     <script src="doc.js"></script>
 </body>
 
