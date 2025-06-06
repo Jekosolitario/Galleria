@@ -30,6 +30,8 @@
 
 /* rendo il body un grid container responsive  */
 body {
+    position: relative;
+
     width: 100%;
     min-height: 100vh;
     /* occupa tutta la pagina visualizzata */
@@ -133,6 +135,7 @@ main#corpoGallery>section#grigliaFotoFlex {
 main#corpoGallery>section#grigliaFotoFlex>div#insieme {
     width: 100%;
     max-height: 70vh;
+    
     display: flex;
     flex-direction: column;
     align-items: center;

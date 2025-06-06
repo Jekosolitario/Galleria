@@ -1,43 +1,69 @@
 :root {
-    /* dimensioni del font base 10px per facilitare l'use rem/em */
-    font-size: 62.5%;
+  /* dimensioni del font base 10px per facilitare l'use rem/em */
+  font-size: 62.5%;
 
-    /* variabili colori personalizzate */
-    --bg-color: #0A0F2C;
-    --bg-card: #1A237E;
+  /* variabili colori personalizzate */
+  --bg-color: #0A0F2C;
+  --bg-card: #1A237E;
 
-    --color: #f0f4ffeb;
+  --color: #f0f4ffeb;
 
-    --link: rgb(0 0 0);
-    --hover: #64B5F6;
+  --link: rgb(0 0 0);
+  --hover: #64B5F6;
 
 
-    --title: #2979FF;
+  --title: #2979FF;
 
-    --tx-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-    --ombreBordi: 2px 3px 3px rgba(33, 150, 243, 0.3);
+  --tx-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  --ombreBordi: 2px 3px 3px rgba(33, 150, 243, 0.3);
 }
 
 
+/* PER VIEWPORT SUPERIORI AGLI SMARTPHONE */
 
+@media (min-width: 580px) {
 
-/* @media (min-width: 768px) {
-    header#titolo > nav > ul.filtri > li > button {
-        padding: 0.6em 1.2em;
-        font-size: 1.6rem;
-        transition: all 0.3s ease;
-    }
+  /* ingrnadisco i button e gli attivo l'hover */
+  header#titolo>nav>ul.filtri>li>button {
+    padding: 0.6em 1.2em;
+    font-size: 1.6rem;
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
 
-    header#titolo > nav > ul.filtri > li > button:hover {
-        background-color: var(--hover);
-        color: var(--bg-color);
-        transform: scale(1.05);
-    }
+  header#titolo>nav>ul.filtri>li>button:hover {
+    background-color: var(--hover);
+    color: var(--bg-color);
+    transform: scale(1.05);
+  }
 
-  .card:hover {
+  /* riduco l'opacità delle card per dargli un effetto quando ci passo sopra con il puntatore del moouse */
+  div#insieme>div.card {
+    opacity: 0.6;
+    width: 60%;
+  }
+
+  div#insieme>div.card:hover {
     transform: scale(1.02);
-    border: 2px solid var(--hover);
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
+    opacity: 1;
   }
 }
- */
+
+
+/* PER VIEWPORT SUPERIORI A 768PX (TABLET & LAPTOP) */
+@media (min-width: 768px) {
+
+  /* griglia card foto cambio la direzione del flex container */
+  main#corpoGallery>section#grigliaFotoFlex>div#insieme {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  div#insieme>div.card {
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 30%;
+  }
+}
