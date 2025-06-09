@@ -3,7 +3,7 @@
   font-size: 62.5%;
 
   /* variabili colori personalizzate */
-  --bg-color: #0A0F2C;
+  --bg-color: rgba(4, 7, 33, 0.95);
   --bg-card: #1A237E;
 
   --color: #f0f4ffeb;
@@ -41,6 +41,7 @@
   div#insieme>div.card {
     width: 60%;
   }
+
   /* hover sulle card */
   div#insieme>div.card:hover {
     transform: scale(1.02);
@@ -67,6 +68,7 @@
 
     opacity: 0.6;
   }
+
   /* aumento l'opacità all'hover */
   div#insieme>div.card:hover {
     opacity: 1;

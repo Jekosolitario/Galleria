@@ -3,7 +3,7 @@
     font-size: 62.5%;
 
     /* variabili colori personalizzate */
-    --bg-color: #0A0F2C;
+    --bg-color: rgba(4, 7, 33, 0.95);
     --bg-card: #1A237E;
 
     --color: #f0f4ffeb;
@@ -15,7 +15,7 @@
     --title: #2979FF;
 
     --tx-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-    --ombreBordi: 2px 3px 3px rgba(33, 150, 243, 0.3);
+    --ombreBordi: 2px 3px 3px rgba(0, 0, 0, 0.3);
 }
 
 /* azzero margini e padding */
