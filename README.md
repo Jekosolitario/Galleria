@@ -1,40 +1,41 @@
 # 📸 Galleria Fotografica Dinamica con Filtri
 
-Un progetto front-end che presenta una **galleria fotografica interattiva** con **filtri per categoria**, **layout responsive** e **visualizzazione lightbox** per ogni immagine. Il tutto realizzato in **HTML, CSS e JavaScript Vanilla**.
+Un progetto front-end che presenta una **galleria fotografica interattiva** con **filtri per categoria**, **layout responsive** e **visualizzazione lightbox**.  
+Sviluppato in **HTML, CSS e JavaScript Vanilla**, con un design moderno e ottimizzato.
 
 ---
 
 ## 🚀 Funzionalità
 
-- ✅ **Filtri dinamici** per categoria (`tutti`, `natura`, `urbano`, `persone`)
+- ✅ **Filtri dinamici per categoria**: mostra solo le immagini di natura, urbano o persone
+- ✅ **Visualizzazione completa (tutti)** per ripristinare l’intera galleria
+- ✅ **Effetto lightbox**: cliccando su una miniatura si apre l’immagine in primo piano
+- ✅ **Chiusura lightbox** cliccando sulla ❌ o sullo sfondo scuro
 - ✅ **Layout responsive** con Flexbox e Media Queries
-- ✅ **Effetto lightbox**: cliccando su una miniatura si apre l'immagine in sovrimpressione
-- ✅ **Chiusura lightbox** cliccando sulla ❌ o fuori dall’immagine
-- ✅ Design moderno con font personalizzati e colori a tema scuro
-- ✅ Immagini ottimizzate (`.webp`) per prestazioni migliori
-- ✅ Accessibilità migliorata (`alt`, `aria-label`, `role="main"`)
+- ✅ **Design dark mode** con font personalizzati e palette moderna
+- ✅ Immagini ottimizzate in formato `.webp`
+- ✅ Accessibilità migliorata (`alt`, `role`, `aria-label`)
 
 ---
 
 ## 💻 Tecnologie utilizzate
 
-- **HTML5** per la struttura della galleria
-- **CSS3** con variabili, layout responsive, media queries e hover animati
-- **JavaScript Vanilla** per filtri e lightbox
-- **Google Fonts** (Bebas Neue & Orbitron)
-- **Immagini WebP** per migliorare il caricamento
-- **GitHub Pages** per la pubblicazione
+- **HTML5** – struttura semantica e accessibile
+- **CSS3** – layout flessibile, responsive e temi personalizzati con variabili
+- **JavaScript Vanilla** – gestione lightbox e filtri tramite `forEach()`, `classList` e `addEventListener`
+- **Google Fonts** – [Bebas Neue](https://fonts.google.com/specimen/Bebas+Neue), [Orbitron](https://fonts.google.com/specimen/Orbitron)
+- **Formato immagini WebP** – migliore compressione e prestazioni
+- **GitHub Pages** – hosting del progetto
 
 ---
 
 ## 🧠 Autore
 
-Progetto creato da **Zuhir Ichcho** come esercizio pratico durante il mio percorso da **Front-End Developer**.  
-Ogni feedback è ben accetto!
+Realizzato da **Zuhir Ichcho** come esercitazione pratica per migliorare le competenze da **Front-End Developer**.  
+Ogni consiglio o feedback è il benvenuto!
 
 ---
 
 ## 🌐 Link al progetto
 
-🔗 [Visualizza il sito live](https://tuo-username.github.io/nome-repository)
-> Sostituisci con l’URL GitHub Pages del tuo progetto
+🔗 [Visualizza il sito live](https://jekosolitario.github.io/galleria-filtri/)

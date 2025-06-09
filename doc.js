@@ -32,3 +32,62 @@ lightbox.addEventListener('click', e => {
     lightbox.classList.add('hidden');
   }
 });
+
+
+
+
+// aggiungo i filtri dell Galleria
+
+
+
+// 6️⃣ creo la funzione che mostra le card filtrate con il filtro passato
+
+/* assegno i pulsanti dei filtri a delle costanti */
+function filtri() {
+  const b_visualizzaTutto = document.getElementById('tutti');
+  const b_visualizzaNatura = document.getElementById('natura');
+  const b_visualizzaUrbano = document.getElementById('urbano');
+  const b_visualizzaPersone = document.getElementById('persone');
+
+  /* assegno tutti i div con class .card ad una costante */
+  const cards = document.querySelectorAll('.card');
+  console.log(cards); // 👈 NodeList di tutte le card
+
+  b_visualizzaTutto.addEventListener('click', () => {
+    cards.forEach(card => {
+      card.style.display = 'flex';
+    })
+  })
+
+  b_visualizzaNatura.addEventListener('click', () => {
+    cards.forEach(card => {
+      if (card.classList.contains('natura')) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    })
+  })
+
+  b_visualizzaUrbano.addEventListener('click', () => {
+    cards.forEach(card => {
+      if (card.classList.contains('urbano')) {
+        card.style.display = ' flex';
+      } else {
+        card.style.display = 'none';
+      }
+    })
+  })
+
+  b_visualizzaPersone.addEventListener('click', () => {
+    cards.forEach(card => {
+      if (card.classList.contains('persone')) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    })
+  })
+}
+
+filtri();
